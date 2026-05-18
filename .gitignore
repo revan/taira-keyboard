@@ -41,3 +41,5 @@ fp-info-cache
 **/gerber/*.zip
 
 node_modules
+**/.history
+CLAUDE.md

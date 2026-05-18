@@ -1,916 +1,5447 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.9-0-10_14)")
-
-  (general
-    (thickness 1.6)
-    (drawings 31)
-    (tracks 0)
-    (zones 0)
-    (modules 41)
-    (nets 1)
-  )
-
-  (page A4)
-  (title_block
-    (title "Taira Keyboard")
-    (date 2021-11-03)
-    (rev 1.1)
-    (company "strayer | Sven Grunewaldt <sven@grunewaldt.de>")
-    (comment 1 "A low profile split mechanical keyboard based on the ErgoDash and Corne Chocolate")
-    (comment 4 "Licensed under the MIT License - Copyright (c) 2021 Sven Grunewaldt")
-  )
-
-  (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
-    (32 B.Adhes user)
-    (33 F.Adhes user)
-    (34 B.Paste user)
-    (35 F.Paste user)
-    (36 B.SilkS user)
-    (37 F.SilkS user)
-    (38 B.Mask user)
-    (39 F.Mask user)
-    (40 Dwgs.User user)
-    (41 Cmts.User user)
-    (42 Eco1.User user)
-    (43 Eco2.User user)
-    (44 Edge.Cuts user)
-    (45 Margin user)
-    (46 B.CrtYd user)
-    (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
-  )
-
-  (setup
-    (last_trace_width 0.25)
-    (trace_clearance 0.2)
-    (zone_clearance 0.508)
-    (zone_45_only no)
-    (trace_min 0.2)
-    (via_size 0.8)
-    (via_drill 0.4)
-    (via_min_size 0.4)
-    (via_min_drill 0.3)
-    (uvia_size 0.3)
-    (uvia_drill 0.1)
-    (uvias_allowed no)
-    (uvia_min_size 0.2)
-    (uvia_min_drill 0.1)
-    (edge_width 0.05)
-    (segment_width 0.2)
-    (pcb_text_width 0.3)
-    (pcb_text_size 1.5 1.5)
-    (mod_edge_width 0.12)
-    (mod_text_size 1 1)
-    (mod_text_width 0.15)
-    (pad_size 1.524 1.524)
-    (pad_drill 0.762)
-    (pad_to_mask_clearance 0)
-    (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
-    (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
-      (usegerberextensions true)
-      (usegerberattributes false)
-      (usegerberadvancedattributes false)
-      (creategerberjobfile false)
-      (excludeedgelayer true)
-      (linewidth 0.100000)
-      (plotframeref false)
-      (viasonmask false)
-      (mode 1)
-      (useauxorigin false)
-      (hpglpennumber 1)
-      (hpglpenspeed 20)
-      (hpglpendiameter 15.000000)
-      (psnegative false)
-      (psa4output false)
-      (plotreference true)
-      (plotvalue false)
-      (plotinvisibletext false)
-      (padsonsilk false)
-      (subtractmaskfromsilk true)
-      (outputformat 1)
-      (mirror false)
-      (drillshape 0)
-      (scaleselection 1)
-      (outputdirectory "gerber/"))
-  )
-
-  (net 0 "")
-
-  (net_class Default "This is the default net class."
-    (clearance 0.2)
-    (trace_width 0.25)
-    (via_dia 0.8)
-    (via_drill 0.4)
-    (uvia_dia 0.3)
-    (uvia_drill 0.1)
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A40C5)
-    (at 208.46 147.39 330)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808885)
-    (fp_text reference SW33 (at 7 8.1 150) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1 150) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A4051)
-    (at 217.53 131.672 330)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808877)
-    (fp_text reference SW32 (at 7 8.1 150) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1 150) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 61719F1F)
-    (at 200.96 122.11 330)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808869)
-    (fp_text reference SW31 (at 7 8.1 150) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1 150) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 615A3B24)
-    (at 191.89 137.821 330)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808883)
-    (fp_text reference SW30 (at 7 8.1 150) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1 150) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3EF5)
-    (at 182.245 106.594 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808875)
-    (fp_text reference SW29 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3E81)
-    (at 182.245 88.594)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808867)
-    (fp_text reference SW28 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3E0D)
-    (at 182.245 70.594 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808859)
-    (fp_text reference SW27 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3D99)
-    (at 182.245 52.594)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080884B)
-    (fp_text reference SW26 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3D25)
-    (at 175.305 128.236 330)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808881)
-    (fp_text reference SW25 (at 7 8.1 150) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1 150) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3CB1)
-    (at 163.245 103.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808873)
-    (fp_text reference SW24 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3C3D)
-    (at 163.245 85.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808865)
-    (fp_text reference SW23 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3BC9)
-    (at 163.245 67.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808857)
-    (fp_text reference SW22 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3B55)
-    (at 163.245 49.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808849)
-    (fp_text reference SW21 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole_Flippable (layer F.Cu) (tedit 61AFB54B) (tstamp 610A3AE1)
-    (at 144.245 118.832)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080887F)
-    (fp_text reference SW20 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 16.196 -2.972) (end 7 -2.972) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 2.196 7) (end 2.196 11.028) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 2.196 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 -2.972) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 16.196 11.028) (end 2.196 11.028) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 16.196 -2.972) (end 16.196 11.028) (layer Edge.Cuts) (width 0.12))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3A6D)
-    (at 144.245 100.832 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808871)
-    (fp_text reference SW19 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A39F9)
-    (at 144.245 82.832 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808863)
-    (fp_text reference SW18 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3985)
-    (at 144.245 64.832 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808855)
-    (fp_text reference SW17 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3911)
-    (at 144.245 46.832 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808847)
-    (fp_text reference SW16 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A389D)
-    (at 125.245 121.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080887D)
-    (fp_text reference SW15 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3829)
-    (at 125.245 103.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080886F)
-    (fp_text reference SW14 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A37B5)
-    (at 125.245 85.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808861)
-    (fp_text reference SW13 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3741)
-    (at 125.245 67.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808853)
-    (fp_text reference SW12 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A36CD)
-    (at 125.245 49.213 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808845)
-    (fp_text reference SW11 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3659)
-    (at 106.245 125.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080887B)
-    (fp_text reference SW10 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A35E5)
-    (at 106.245 107.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080886D)
-    (fp_text reference SW9 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3571)
-    (at 106.245 89.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080885F)
-    (fp_text reference SW8 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A34FD)
-    (at 106.245 71.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808851)
-    (fp_text reference SW7 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3489)
-    (at 106.245 53.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808843)
-    (fp_text reference SW6 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A3415)
-    (at 87.245 125.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808879)
-    (fp_text reference SW5 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A33A1)
-    (at 87.245 107.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080886B)
-    (fp_text reference SW4 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A332D)
-    (at 87.245 89.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080885D)
-    (fp_text reference SW3 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 610A32B9)
-    (at 87.245 71.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6080884F)
-    (fp_text reference SW2 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:SW_Hole (layer F.Cu) (tedit 6182F205) (tstamp 61099D45)
-    (at 87.245 53.975 180)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /60808841)
-    (fp_text reference SW1 (at 7 8.1) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value SW_Push (at -7.4 -8.1) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_line (start 7 -7) (end -7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 7 7) (end 7 -7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 7) (end 7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start -7 -7) (end -7 7) (layer Edge.Cuts) (width 0.12))
-    (fp_line (start 9 -8.5) (end -9 -8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 -8.5) (end -9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start -9 8.5) (end 9 8.5) (layer F.Fab) (width 0.15))
-    (fp_line (start 9 8.5) (end 9 -8.5) (layer F.Fab) (width 0.15))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A59F)
-    (at 204.723 134.762)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /613B097E)
-    (fp_text reference H8 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A597)
-    (at 165.87 117.73)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6139AE82)
-    (fp_text reference H7 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A58F)
-    (at 172.463 94.248)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /613968FF)
-    (fp_text reference H6 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A587)
-    (at 134.379 94.204)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /613A7E8C)
-    (fp_text reference H5 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A57F)
-    (at 96.694 116.997)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /613AC3D2)
-    (fp_text reference H4 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A577)
-    (at 172.365 58.174)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /613A391F)
-    (fp_text reference H3 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A56F)
-    (at 134.342 58.24)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /61396604)
-    (fp_text reference H2 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (module plates:M2_Hole_TH (layer F.Cu) (tedit 61AFB65F) (tstamp 6139A567)
-    (at 96.755 62.896)
-    (descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-    (path /6139F453)
-    (fp_text reference H1 (at 0 -3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value MountingHole (at 0 3.2) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.3) (layers *.Cu *.Mask))
-  )
-
-  (gr_arc (start 192.406 105.961) (end 191.571 105.951) (angle -61) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 191.992438 106.686459) (end 228.796 127.992) (layer Edge.Cuts) (width 0.15) (tstamp 617930B2))
-  (gr_line (start 115.926 40.779) (end 115.926 44.785) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 115.546 45.165) (end 80.206 45.165) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 115.546 44.785) (end 115.546 45.165) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728D26))
-  (gr_arc (start 116.306 40.779) (end 116.306 40.399) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728D22))
-  (gr_line (start 134.542 40.399) (end 116.306 40.399) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 134.542 40.019) (end 134.542 40.399) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728CF0))
-  (gr_line (start 134.922 40.019) (end 134.922 38.398) (layer Edge.Cuts) (width 0.15) (tstamp 61728CEF))
-  (gr_arc (start 135.302 38.398) (end 135.302 38.018) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728CDD))
-  (gr_line (start 153.185 38.017) (end 135.302 38.018) (layer Edge.Cuts) (width 0.15) (tstamp 61728CD4))
-  (gr_line (start 172.18 40.4) (end 153.945 40.4) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 153.185 38.397) (end 153.565 38.397) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728C7C))
-  (gr_line (start 153.565 40.02) (end 153.565 38.397) (layer Edge.Cuts) (width 0.15) (tstamp 61728C7B))
-  (gr_arc (start 153.945 40.02) (end 153.565 40.02) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728C7A))
-  (gr_line (start 172.56 43.379) (end 172.56 40.78) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 172.18 40.78) (end 172.56 40.78) (angle -90) (layer Edge.Cuts) (width 0.15) (tstamp 61728C46))
-  (gr_arc (start 172.94 43.379) (end 172.56 43.379) (angle -90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Taira v1.0\nDesigned by strayer" (at 116.152 132.279) (layer B.SilkS) (tstamp 615A4B56)
-    (effects (font (size 1.4 1.4) (thickness 0.2)) (justify right mirror))
-  )
-  (gr_arc (start 189.284 46.046) (end 189.284 43.76) (angle 90) (layer Edge.Cuts) (width 0.15) (tstamp 6133AAA6))
-  (gr_line (start 191.571 105.951) (end 191.57 46.046) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Taira v1.0\nDesigned by strayer" (at 116.152 132.279) (layer F.SilkS) (tstamp 615A4B53)
-    (effects (font (size 1.4 1.4) (thickness 0.2)) (justify left))
-  )
-  (gr_line (start 189.284 43.76) (end 172.94 43.759) (layer Edge.Cuts) (width 0.15) (tstamp 6109D3E6))
-  (gr_arc (start 227.907 129.262) (end 228.796 127.992) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 212.755 158.597) (end 229.177 130.151) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 211.602 157.728) (end 212.755 158.597) (angle 91.68588017) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 169.04 134.8) (end 210.699455 158.854935) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 80.206 134.8) (end 169.04 134.8) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 80.206 132.514) (end 80.206 134.8) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 77.92 132.514) (end 77.92 47.451) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 80.206 47.451) (end 77.92 47.451) (angle 90) (layer Edge.Cuts) (width 0.15))
-
+(kicad_pcb
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(title_block
+		(title "Taira Keyboard")
+		(date "2021-11-03")
+		(rev "1.1")
+		(company "strayer | Sven Grunewaldt <sven@grunewaldt.de>")
+		(comment 1 "A low profile split mechanical keyboard based on the ErgoDash and Corne Chocolate")
+		(comment 4 "Licensed under the MIT License - Copyright (c) 2021 Sven Grunewaldt")
+	)
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user)
+		(11 "B.Adhes" user)
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user)
+		(7 "B.SilkS" user)
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user)
+		(19 "Cmts.User" user)
+		(21 "Eco1.User" user)
+		(23 "Eco2.User" user)
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user)
+		(29 "B.CrtYd" user)
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions yes)
+			(usegerberattributes no)
+			(usegerberadvancedattributes no)
+			(creategerberjobfile no)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk yes)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 0)
+			(scaleselection 1)
+			(outputdirectory "gerber/")
+		)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-000061099d45")
+		(at 87.245 53.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW1"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1d8641bd-7e2f-4560-aed0-7afc9ecec815")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a3d682d-0897-4e1e-b1ec-55f89669b0fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62cc0df9-05f4-4231-97e8-4596aa140e91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5d647fe-349d-41d4-b497-87118de11bce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808841")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "871ffedf-1959-4fed-af82-2a0147ae4bb2")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b07aae88-4167-4cf5-87bb-cc046fdb2d7c")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4ba1fd90-ccaf-4218-ba42-5c518797b426")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2703f754-6a30-4624-be35-97bdaedc2665")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "806e7983-ff79-4290-ba58-9c3fd9e9da28")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a979b902-bcd7-4e28-8923-21f5d07c9742")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "071d10d9-23a8-4ec3-a579-2d39582b29b7")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "15559621-900c-45cb-be6b-47e1dc900d0f")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a32b9")
+		(at 87.245 71.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW2"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "59316bcd-2bec-4757-a431-59e46fada181")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f414128d-e003-4f42-9913-fb617c3b22aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c2e9b3c-e121-4303-9f1b-8de0309aa2c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b71290d-efbf-49fa-8022-d9e168d1d01b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080884f")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d9c101ed-acf7-4398-8c2e-c7e93871028f")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8eba2aee-3285-4bd9-80bb-49918a45f3f0")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "112f671e-a712-4695-ae97-1a4da989ae30")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "dd7319f4-0f04-4674-bbb3-6c4bfd3a39bc")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a04ec006-362e-4fb2-899a-9b35bf040b58")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c814ec9a-9874-4e19-806c-f146d3a88bb9")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a0f7b7d3-4c4c-48dd-ac86-e90cf5f22abd")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2822eb92-5f10-46ab-99f0-457b68d7d536")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a332d")
+		(at 87.245 89.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW3"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d5e42052-ba5c-4bf3-a117-0c925c0d69d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2345b3b-2cef-4394-b9b7-9ebdbd1b385d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a57c29bb-07f3-4317-8618-80db12dd0f7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ed140b5-501c-406e-8538-cdb7fbe42efd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080885d")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "366b4243-69c5-4746-b803-3afe4f27c444")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a80a91b3-a8f2-45f5-8b51-d92121a79155")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "339e7b8c-0e6c-475c-8a5f-c184dbc98e56")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "56473e71-66d8-4f69-8e58-812e781d175f")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "385bf490-6eff-4d7b-a58c-068256ab3080")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c9985adb-eeec-4825-befe-23e1f9f557c7")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "15acc937-5bed-4caf-884d-d64ec099c076")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0faf9548-4443-4583-9c97-2e8601b70753")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a33a1")
+		(at 87.245 107.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW4"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "691e55a5-3282-41e9-87b0-1610c02f1519")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0586f0b5-d01c-4b9c-9dc0-c3d73ca4c629")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b8a244f-298b-4892-a071-3411f768d094")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44121852-dde3-4aa4-a79f-2934868c46f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080886b")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "27306e54-5941-455b-998e-1b1e1a526fe9")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "02631d20-10c2-42c5-9180-ea4fdd734e93")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "30f88f1f-5ea6-40cf-b469-037c4f9e9ae5")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "5ba35d45-2621-407c-a4ee-0e711541e52a")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "813cde4d-7aca-40ae-95b8-da649a5ca036")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d8889620-9775-4fb3-9611-290bd717575c")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2ad24a57-1690-4af6-bf0a-50077af81d68")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b5f0eccf-7aa8-478d-ae50-12fb6c457972")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3415")
+		(at 87.245 125.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW5"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3f9c5f55-42ac-456a-87c0-01e17d81ad26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca036d79-0454-4102-b9d2-272b7ff3441d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de2d96e1-fea5-4834-a8ca-f809df2c1687")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ef94109-6964-493c-a729-f68ef6d0cce3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808879")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e8acab7f-2411-44b5-bdd2-db5346425077")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "5043e644-388b-414f-87d1-d08bb4c10df0")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "03b3739f-3c21-4dcf-83a6-17a9f0be2c9c")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b6574dc8-83dc-4fb3-9492-05d14dce97e5")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "26c4197c-b1d5-40c9-93c7-de8b8fe126b3")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0dcdff41-c39b-48b6-a541-8a6f1fa4353f")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f8293a16-aa95-4fcf-88c7-e8aa9f34f24e")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "485c9ce0-8a6b-4863-9d1a-f0d94a6d5b92")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3489")
+		(at 106.245 53.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW6"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a5cb65df-d7e7-479f-9bf9-d8cff425178a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5e3660f-4086-4e96-8b60-8eaa9f5b1720")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c3ae1e2-9237-4c74-b56c-27438af886f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c90f15e7-06b0-4ece-b955-dc9a10022fb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808843")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b8e5a114-2f2b-4b93-8079-82a8832b1b08")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3e80f246-afa2-4a52-8bc5-a01ebd58144e")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7010468f-31cc-4f4c-ae1b-572011692178")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fb0301b8-8e26-43fa-814a-bfe181b12d3b")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77f3a28a-1cdc-42f6-a3f1-dbec2bd0bce1")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2a368c53-9f86-4296-9dbf-bd03ddd6f1a5")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fe831caa-df6e-4dbd-a24c-64fff3c41315")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b967b8a5-5aaa-4356-8c77-2816165bf859")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a34fd")
+		(at 106.245 71.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW7"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "00349168-656c-47c4-88b7-dd221ef8aeda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4d36986-0e3c-4eea-8b42-8a9f9ace74df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f69eb71b-3cc4-470d-aabf-b9ff3177b150")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e1a83d1-22bd-40c9-869e-422e434c090b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808851")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f6c4fd2e-73cb-43a3-93fa-c8d721444fc7")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e8a0d3c0-1f09-4644-a5bc-b8291c00f2d6")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "94a6aa08-6c09-46b2-89e2-6d771005a508")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0b14e734-8a5c-4229-9b91-ec7377aa9cd9")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8120851e-fff9-40b4-94cd-62b8db87a294")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9896dc8f-ec3a-44fb-a63a-7e06f11a9e07")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "da02fad6-30d0-4181-9d9c-7dd0e2aa768d")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c9c723a2-348d-4a78-9019-360f513521a8")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3571")
+		(at 106.245 89.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW8"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b980d1eb-bae8-45ea-84e9-a0c0efb2e010")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43524139-00c9-4733-b9ab-b49c98f60516")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6359739d-c4a1-483c-9800-c94414b75a72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fd7fa32-6462-4d81-944e-d6823b8db0b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080885f")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "48c16d10-d226-436f-9431-70ae57faf83d")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7dd0c349-1976-4e76-8176-2f2a3af79adc")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "553bdc88-09fd-446a-83c3-6e5e87d602e3")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fdc0dd32-4fc8-4563-af4d-b5b4102f496b")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fb929b3d-6aff-43c1-9a27-3722e7af21f3")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f7e7e8e2-ec2a-4357-b423-d8d187a8caa6")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6238ade4-7bc1-4aaa-b52e-b12c2f6d0743")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b6b21518-08ab-42e2-8c63-59ada92d95e8")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a35e5")
+		(at 106.245 107.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW9"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5e313bca-65dc-4e19-929c-900aca5ed539")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6d85a89-e1cc-44f7-900d-ae19bfb81132")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fd684c3-ec27-489e-92d2-8bc7ffcdcd9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3e412d5-67ed-441b-a545-4e2907a441f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080886d")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b53da647-fa4f-4d94-8018-34c5ad56307a")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f50a0673-ee60-4047-a207-7ef81703e13c")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "dbf2a70c-d98d-4518-9e6e-f2ed9ddc13b0")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c16d2308-2855-492f-979c-d0db0e3b6908")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "db30b9d3-cdd5-47da-890d-f16ceb636039")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c85de462-0085-40dd-bb7e-5833b78cdfeb")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c2350881-6829-463f-b5d0-1902464e2289")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "74c93400-47dc-4f12-a92f-adf54344247a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3659")
+		(at 106.245 125.975 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW10"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e31418af-b0d9-4626-9711-60e971844023")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6754c587-683b-496a-b8f9-66da941139b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "775bae56-8cd2-48ec-89a3-8cd5eeab24de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a21c4969-6cc3-4c32-9503-6deab7a46565")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080887b")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9525fd4c-b747-495d-b842-c15c3106e42a")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d5fd3d4e-47c7-41c6-b4a4-88b0e46cafad")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b92fd881-eeca-4835-bd5f-40a1de28e77a")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f7b8ab20-281c-4c21-a548-edd0bd7f4ae5")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8038a572-91f8-4f79-babd-13232d2ef079")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5da8504e-9065-4e29-9bb7-c52044023c9a")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "16d7c491-0663-4b9e-b5f7-679a4ab652ca")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "593d1f7f-f813-4074-8c5c-3deedb45b3f1")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a36cd")
+		(at 125.245 49.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW11"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fd989969-6da5-4990-9e20-93ffbaac6fde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1537f46-1190-4de7-ba76-a504e78a5b98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3a72c89-e1fc-4422-b39e-91ff89075138")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "928897bd-9a39-452e-ae8a-6d67ba33550b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808845")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "815d10b6-be89-4da2-b515-3229d5dab46c")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "651d7150-2140-4b1f-93b0-b0324efb2780")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f2ebdee0-4a7a-4ede-9b3a-ee239a806103")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "692d6861-e9a9-451a-b321-19f950d42cff")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7d56caf6-acb2-4230-a939-64cee5784221")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0d1190da-5699-4292-b54d-cae9a8f5b1a5")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4041c90a-50b4-4df6-8424-c08ad177ca14")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c4a2f72d-7653-4f9d-b178-0f05e46fd5f3")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3741")
+		(at 125.245 67.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW12"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0ebaa1d7-9278-4f43-9e5f-b879b27bc0ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21af19a5-6799-41d4-8f94-71a32e9ccab0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c931c306-5cda-4f73-9af1-6067c46a8cad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e538db69-3a5a-4464-ba89-674f67cf4368")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808853")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c33bfc56-2b8a-48f1-abda-f8e74cad2e77")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8e9a4f49-6dfb-44f4-b8f3-a0695e1c824e")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1bc3d3b9-240b-4eb7-a0f4-cb3b57425a1b")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e96ff2ef-3c3f-4446-b64e-f53831693420")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e0368560-f56e-42d3-a94c-ac6e049b72b7")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e60108fd-b7fc-4af6-8d32-749096b2e741")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cff0f9c2-5e58-4cb1-9e64-a434a9a3bfb9")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "358de210-41eb-409e-b324-cfacb2b29add")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a37b5")
+		(at 125.245 85.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW13"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a1d361c9-b30a-494e-9531-51b94440501e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57fe683f-eeb4-4924-b3c2-7206699594aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccf0b396-cf28-481d-a422-5e7ece0b403e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84f1ec2e-9a64-401b-ade1-4f5e4b35e45c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808861")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6c617253-d6b5-48b7-9d79-f995e7f87728")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c49ae000-7828-4cfa-be6c-fabdef3e1faa")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "97ddc1d2-1411-4923-972f-a538de288575")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d12a51b4-66eb-4233-98e2-8ad1bf843c72")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8430dca7-ef7b-40f5-9903-6e9f599fa29d")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "de255f81-353b-4250-8cad-1c89a0372743")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f728dac5-915d-4349-9f70-97b3efe3b265")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "24bb94c7-35a2-4a6b-b8f2-480c31cbd53a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3829")
+		(at 125.245 103.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW14"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bf985b03-c892-4e20-8792-565045902034")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37fa96f3-00d9-4662-baa8-bbb5de7b67ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8eb3a91-f714-4194-9180-43533fdf4e8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43640600-91fb-4d9f-806f-b20445a623ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080886f")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "67d39d8d-5b66-41dc-9c3f-f2c8857dbb22")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b8dba5c1-7f0a-412e-a0b8-293377fa27bd")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6ce72eae-fff2-48bd-9a5a-0172535266d7")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "50c97c34-60f0-4911-9d87-40c5dac0af2a")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "59950e56-abbf-42a7-a8f2-668012eeda5c")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "74105b2e-2568-45d5-ad0e-9ea499707678")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "07383220-60c6-4b2c-9ea0-644c20433161")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "963d0b87-c53f-425c-9310-94eeeb61c3ed")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a389d")
+		(at 125.245 121.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW15"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "76c7b7b8-d957-47af-8eea-65a287849634")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90d20b1d-346f-4fea-b6f4-ec7bb1201539")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "277c5432-8a69-4d08-934e-d8fb13ea9827")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54ca7155-8fdf-4289-900b-988901a720c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080887d")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "923bf227-b19e-4b01-a5ec-5302c20821c7")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b7bc7b1d-7296-4221-93d4-fef12ffd94b5")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "87eda7cb-1af4-4d3a-87ca-aafe8ff37dc7")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2e6d0d48-0d5e-469a-b4b6-7b24121ec6cb")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b28c4652-5bd6-41b8-bb16-7c31d5428d5f")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2aabe76e-15c5-4658-9308-e141c3532fa5")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b89e8715-f331-418d-88dd-125d777b4a0c")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eeb1a1e3-af1f-4bca-a298-f2d0c5ee80d0")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3911")
+		(at 144.245 46.832 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW16"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8afe9e64-a033-41ea-a9a9-16490d416969")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9705d5b-5ccc-4c89-a1f6-20607d1610ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "400acff2-f584-4591-a97b-6586052e9a12")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9118f317-80a8-4218-9b54-0f565a067d67")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808847")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6e71e556-6245-4c80-894c-b2af9f8e64a7")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "665f533b-4857-48d4-ac81-7d91d76994be")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8d571cd8-9d37-456b-9b4c-394538ba691a")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "221be8a4-d336-49ce-9c69-cd24447f6fb0")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e7bb2c26-53d6-4303-b15f-3b5b9f39ea07")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "299bb7cd-1372-468a-ad09-e936edab6d41")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f014618f-8821-4121-b82e-f37c4dd2bb24")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9cbc28c7-5eff-49cd-bd1b-617d33898eda")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3985")
+		(at 144.245 64.832 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW17"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4d1c8830-cb64-4309-aece-00622575e12f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d94dcc1-d5c1-4bfb-8075-8a713df13dae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a00d677-fe5d-4f21-bb18-d157dc0768a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d05c180-47ea-4455-b47e-c045a75ce5d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808855")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e77cbcb9-4fcb-4c98-858b-5498688ea657")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "60857402-13e2-45eb-952e-33ea5e385221")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "118ddf09-ec42-4552-9989-241f6a8a2368")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "aa39aeed-f776-4436-8a65-50caf2e84f6d")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1d432e1b-24ab-4342-8e11-7b9fa20808fd")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2f190633-204c-4896-87b5-80c57141e1e1")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9f4c5e10-1408-4280-8a19-c06735cf9a6c")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3c20ad88-ab9e-499b-8f3a-a15f5d0800b7")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a39f9")
+		(at 144.245 82.832 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW18"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0ac6a98c-697f-4124-a9bd-5dc0a5dbd66d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1be8f83-9d41-4777-8d59-0f4ba4ec9a52")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e565f35a-af75-4723-9458-00b0230c6c45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7e80516-f807-4353-907c-da84c32eea95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808863")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2296be62-e387-4c6f-af60-032772ca9026")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8214317d-ba51-4983-9c75-29dab0fe4981")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "94e6b26e-d92d-443f-a56c-50c2b79a1a5c")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fe82d7b6-2993-4c2b-b10a-9c3553462e80")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c1300a3d-8393-41e1-91b3-387bec343d59")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0c0bd3bf-c6a9-4cf2-b591-69fd5cf166ab")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0e2f538c-25f2-42be-967c-e7af25955136")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d9318c7d-ed9f-4dd2-afbb-d65fc5d2b6e6")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3a6d")
+		(at 144.245 100.832 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW19"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8f8036e1-e901-443b-a784-95a45d042523")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0c2e312-3911-4cfa-bebd-c2ac9a695fff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16fa0b6b-bcfd-4634-98ac-55803c907ddb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d532ee97-498e-45c7-bff3-e79458334ba9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808871")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "667552a5-3bca-4d56-b353-9ac3ecb13110")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "228ddfd6-41b3-41bf-a093-b30b17e2be08")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8978b2aa-f5cd-4b9e-b5e5-47b5b16d0300")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0f2585c6-ac13-47aa-9fe1-9f998e23eb7b")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7f68e91b-8e21-40fb-9cee-e56c6bef8bef")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "71d320d0-61cd-4869-b134-15bafc6d39db")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "771df35d-ae65-4727-8132-0ff7c111ba5c")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2051d0b7-47e3-4797-a885-84f9b6db5dc5")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole_Flippable"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3ae1")
+		(at 144.245 118.832)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW20"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "acb1699a-1695-4599-bad0-aa8cafbf2764")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68cb2492-7a28-4382-b1d6-fd8a08568036")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f985f10-eff4-4fef-bdab-102ed4b75f34")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32628af6-d868-4ee8-b5ce-57754d82734b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080887f")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "69f76d92-a64e-4e75-b09c-e34f10e5ec05")
+		)
+		(fp_line
+			(start -7 7)
+			(end 2.196 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ac0248b7-1916-4141-922e-15174a76998d")
+		)
+		(fp_line
+			(start 2.196 7)
+			(end 2.196 11.028)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c3ea168d-acea-42ec-8e0e-f3dd30e71771")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "22b3b6a0-b22e-4748-93ab-bcef9d8cfdaf")
+		)
+		(fp_line
+			(start 7 -2.972)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "754e82c2-7218-41fc-86ec-c5f74c352109")
+		)
+		(fp_line
+			(start 16.196 -2.972)
+			(end 7 -2.972)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4a90dcd5-adda-43d8-a0fa-7043dd972e3e")
+		)
+		(fp_line
+			(start 16.196 -2.972)
+			(end 16.196 11.028)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ad7f51da-0aee-4df7-b158-4800ff84470e")
+		)
+		(fp_line
+			(start 16.196 11.028)
+			(end 2.196 11.028)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3bc828e6-76bc-480d-9d9e-b2ce2087703e")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "52f5b8c1-c014-42a0-b510-5175a20246c6")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "df924531-dcb6-4916-b384-876e50003485")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c1d673cd-1524-42fa-bf12-1557cb279d24")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2a4c5452-f83f-44aa-bae3-8986ae1aefe0")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3b55")
+		(at 163.245 49.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW21"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0f870577-895a-4dc2-873c-77ba330febd0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d6d136b-36b8-45ca-967a-eadbad77d3ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ae351d9-023f-430c-b9f8-231c4ecbeccf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63ec4f19-0fa2-46b1-b250-520321cac036")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808849")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a2b40f84-7847-48ed-8b75-bf129a047091")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e69aa24c-9bab-4a7e-bb29-644c93673b3e")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7b7eb600-98a3-42e2-bb46-b59c48e4d09e")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0066e8c5-d090-41d7-b3f9-bc196b3e0ce7")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5b05398f-ef23-4131-8cfe-3ff272482c63")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2367c917-b5bf-4af5-8154-78ca2de58f8b")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "36a5c988-dd74-4453-91f9-22802749b136")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "35bb89bc-5de1-47ad-b5fc-e2bbf4b63b3d")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3bc9")
+		(at 163.245 67.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW22"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "194eab19-c322-429b-9daa-732ae506cbd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aaa533b2-6c17-47ef-8738-dbd3c99014ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3b12142-939c-4626-b2a9-6d0c6ce36ef1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "365569b5-c591-4de3-9664-778c2d317dd4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808857")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7b322d89-156f-433e-87f8-298a54772365")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "64590d72-6d78-490c-b277-dfcc502a6f24")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "dcce503d-8111-48cf-a9c2-21ff151c5277")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c4660159-bb96-4975-ac4f-a1c2215b32fb")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f7ee7d04-c68f-45e0-ba14-f490f7b0c4bc")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a3df9975-3e43-4851-b254-8a8a4ee34e96")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2ed7af3c-a605-4fd4-bc6b-535cb951f065")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9a0e8d8f-8170-46c4-8d74-30c610c1dcca")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3c3d")
+		(at 163.245 85.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW23"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bb109ff9-ba5b-4006-9e25-05ecb14b2f11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c72c233a-8192-4834-a049-0ecd90f4aa7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "308dc969-96dc-4c89-b5b3-76890877f33b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "425c6de1-0dff-4917-ab11-1a29aad897d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808865")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d8d28c47-6118-4bf9-820a-7fa6a480e52c")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fc30d9b1-db5e-43cb-81e5-c462d16acac8")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "36f29352-a66e-43a9-b330-fa6307687059")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "55eda692-c9c4-4dd9-b930-2c2876742ec2")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f8bee3bc-98eb-4265-bf21-441dacd73076")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ceb1c3fc-d605-457c-8559-cdec5c5dc9d5")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c9b88086-3f03-460d-b19b-07b03baa4da6")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d26ae899-bdfe-436c-988e-5d54344671e3")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3cb1")
+		(at 163.245 103.213 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW24"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2c5e2c9-1367-47ec-8544-21afc066f454")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e36b791c-1daf-488a-a2aa-a9d8d39a8340")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1676467c-5d48-4e9e-a94f-940752bf415e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc5b7819-a808-4d8d-bfb3-3a40dc487f3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808873")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f0356073-2ae8-4bc6-abf9-e14a5d41c7fe")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "5f80f0e2-7ecc-4440-a9ea-5928c2a0c57a")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6ad3a47f-29ef-49f7-bae0-e5e626a25441")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "deac0ba5-2e77-41d5-ac5f-979da496979b")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "977bb506-669d-469b-b768-c759807ebe2f")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0f546edc-ab46-423d-8eb3-322262a0143b")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d6333da9-1280-45e6-a30c-051e47cb2ef2")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3a70c20f-d173-42e7-b49d-7f8c61d1d4aa")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3d25")
+		(at 175.305 128.236 -30)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW25"
+			(at 7 8.1 150)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4fd0001e-44c6-4392-b4c2-dda7774b489b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 150)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6880af77-4611-4833-a2c4-da5e28bd1f2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ac54b61-465c-4218-8d73-8f3e1cac19f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2a3a49c-2ff4-4987-a181-c47f3058948f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808881")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "23f9c50f-0fae-4b43-8e03-e42f13b4a1ee")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "51262c07-46de-42e6-a19e-ad461a114bf9")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c6d2a1ac-ab12-485f-bf5d-f04f3b86ac58")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0342857e-c99b-44a0-9a54-bc729ab9f4e4")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "52999980-7c32-4433-aeee-da1998361c18")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "06418055-17f0-4e5f-bb7e-31d86c91ae48")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fd077114-4e4b-402c-807c-971d16505fa2")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e299e299-d245-4b63-99f7-5c953280f552")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3d99")
+		(at 182.245 52.594)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW26"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f20cb18d-9357-4647-8d7b-7fde328360f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cad4c7da-5133-4359-a8dc-5b49e6e0677b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71a928ec-ef74-4bb7-96c7-02705c8ba2bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8e50e1e-f2d0-41cc-9505-d5b9ba4324b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006080884b")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "53276311-7598-4419-a6cf-35cbabf05f44")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b0879561-a6a3-40af-a2dd-d6f2407510e4")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1e76516b-2db9-4fd0-a6eb-c3bf9b485840")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f1380bfc-9581-4295-8f87-90844451be1d")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "27959683-93fc-45ff-98d9-6140450cb829")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "900b2f77-8b7e-42bb-967e-2f5f8acc1f72")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "38875598-a43a-4aa7-a586-116c32dd2ad0")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c803c764-68b9-44b5-bd7a-78de9b535563")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3e0d")
+		(at 182.245 70.594 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW27"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "31c7e736-f766-4e27-a5af-888c446bc627")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0938842-57c8-4223-82ef-65d128b88766")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fd0bc8d-de5e-4ba2-b60a-1f757a340709")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44e63530-b541-4749-97b3-6369fd5cf4b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808859")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d8d6ef5e-c1d5-4258-bf64-5d2624914fab")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b091d2ce-6f20-4dd9-93cc-74682a1c8cfa")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "671c0885-80ca-47f1-a335-ce0baa5046ff")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8b883338-7d4a-4d0c-a000-e2caec42d61d")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4fbb73f0-a85b-490a-89b5-fb1c03d2e239")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "24eb86c5-ac2e-4a71-9c09-a83d145ce119")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5921b6ba-5404-4c6c-8381-13441ac88929")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bddd4d31-f0cc-4e96-ae52-3bdae045105a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3e81")
+		(at 182.245 88.594)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW28"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6268eede-890c-4bc3-a501-ba12ac1258f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77663ab0-6b60-4cc1-b2c9-59e8d49d5972")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8f1136d-b013-486b-942b-1d42e0c6ce82")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a15bcede-8a72-4f26-bb70-30caed94ab0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808867")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3ef0c6f7-735d-4e73-a705-42eab6f168e5")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e0bbed3f-a46c-45f9-b428-6b5e6bd03d62")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d2152c90-f8e6-4588-a47e-693b54e50b7c")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fd3ff2c3-e973-4610-ba13-604bb01dc122")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0f14bbb3-b17d-443e-8024-2e14ebdc2776")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f5236530-5ca9-4e32-8def-d19288ebe70d")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1f87c268-d21f-4b0a-8e36-17e28d8c74da")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "80e9dccf-0081-435e-adc3-1f1d75da3b9d")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a3ef5")
+		(at 182.245 106.594 180)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW29"
+			(at 7 8.1 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7d906e96-6965-442c-8ab2-9d2ecb66f3a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29c43b4d-7395-45cc-9d15-5c467928797d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c39d2d87-2d6a-445f-9544-010ed216f53a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d534627-5dad-4cb8-92c1-66c024ef5696")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808875")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ff3b667d-9160-44fd-bf37-a8eade6fd3d9")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0c2767d9-c541-41f6-84be-0bf6f7d1afbb")
+		)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "331e1b16-588b-48ae-ba95-d4491ff61483")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "16d5ec21-ae40-41da-a86e-9325c02e76cf")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4fdbf7d9-6cdf-4acb-a98e-924b77958314")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4c01d179-84e9-4116-9471-6b4606e77c54")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bae104b1-5a70-4474-ba02-4fb482b41f4d")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "94f1bd21-5455-4282-8302-e548dd2ccf90")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a4051")
+		(at 217.53 131.672 -30)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW32"
+			(at 7 8.1 150)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "926743be-ccbb-4ffb-9746-4a377c8c8b11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 150)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e34e61ac-5590-41d1-a2bd-9225d54e7049")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cba53b01-e9c4-4618-9f73-1003f97c633f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d67f8fd5-0cad-4573-a9a2-36b028c47c89")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808877")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "41688514-0686-4003-b562-5e6dba39b19d")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9b6ce71b-6b6f-41bd-b999-d84910a9d20c")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b9c166ac-d2f8-41ee-993a-fe02bb65d2fa")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "07dda99f-6d1e-4e41-9b8a-798b6e3f705a")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ba347254-f0ad-4ca2-b1ee-fa310dd23cba")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ab43c42d-94fb-4630-a13f-6460db1e28be")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "69f2677d-a189-4e11-94a2-16c7999b770f")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "513fb123-2617-4dba-b1cf-7509717b8361")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000610a40c5")
+		(at 208.46 147.39 -30)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW33"
+			(at 7 8.1 150)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "88806f0d-acfa-4700-8336-f48b917ecf38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 150)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08f651fc-a9e9-49b7-9f5f-9561ae5ccf14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9d70018-741b-4cd6-af0e-825bfa6f3c7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89522f90-9b0c-4fb4-b4c6-227f8647f353")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808885")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2bb90618-e8b6-419f-8701-09fc8025f91f")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4d8c933e-ec9e-40e2-88cb-dcc4f1bc4b96")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2d7ea186-1a6c-4fb8-8b95-78f6ccad31f9")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "cf99c78d-c118-40f5-b889-cc9c2b7f98a0")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cc5844b4-5a66-46b8-a89b-35b097ccb41f")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b35316a1-d662-4016-bfd9-f2e4159bdc3f")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "33fa890b-9bb8-4c0c-9e65-2902d1f092fb")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f1291513-dc93-4ee2-ab15-ff96b0970b76")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a567")
+		(at 96.755 62.896)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H1"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "fd3b4116-aaee-49c3-8616-da8189ea023b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "ec702e3c-d2f3-4ba8-8cb3-4bd9b1baad4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2908742-4cec-41e6-acff-7baf533fd639")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cff057b-2df2-4a01-a984-2810577258c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006139f453")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "b816dc48-5a44-4bac-9494-2faa06ac9f00")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a56f")
+		(at 134.342 58.24)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H2"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "298871c7-7229-42b7-bf40-73f89b6b8e07")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "f0cf7650-2a80-4b40-bc39-9d6d62c7b7b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9abc013c-276c-46b9-9140-9345bddadf3b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b18a4994-dea3-439f-a616-0346b3c10163")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000061396604")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "0d67563c-27cf-4319-8550-4b59ab2e21f3")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a577")
+		(at 172.365 58.174)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H3"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "1e90d5b1-24d9-4d2e-9c6c-3829614fcc29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "6624a5e9-89e6-4857-b18a-9aeb2c901683")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a23886e-f7ed-4a78-8312-e504b7e511d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "993ecc66-921c-423e-a559-36dce72f9567")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-0000613a391f")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "e0132b04-bc4f-4171-9355-6637ee479d0c")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a57f")
+		(at 96.694 116.997)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H4"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "3ffc17a0-2386-49d2-ad5d-8e96d208b0a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "e6ee1b19-daaf-4f62-9378-677c174d3d97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d2fd963-3bf6-4591-8a02-2566805bc3a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75de1a08-7fa9-4b8a-8241-9326f1825439")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-0000613ac3d2")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "693518ff-15c6-4770-afbf-0519fd6e506a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a587")
+		(at 134.379 94.204)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H5"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "d57d5114-b758-4aa7-b980-84e8a3b41405")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "875763e7-571b-420b-93c4-f9deb37f129c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a50b184b-ee5f-44cf-ac4c-8aa7c92ce414")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1872e89-336f-466a-9240-54b541431eb6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-0000613a7e8c")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "08a92d5f-d39b-4b18-917b-6cda3f94d994")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a58f")
+		(at 172.463 94.248)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H6"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "0f182950-d40d-4088-8063-fe66844ecf9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "fb510f70-d0f6-4dc0-a43e-788831cf3d1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34901d37-635d-4408-be2e-0c4ef102a971")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "919e182b-e21c-4410-81e9-2ff311c32d5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-0000613968ff")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "580b5ace-5e83-4cc2-ae9c-8758d5d54256")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a597")
+		(at 165.87 117.73)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H7"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "e7892b9b-b954-4204-b744-3e5373b1d9d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "1475252d-1689-4141-bf2e-801c640c85b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60b5f7a9-f2b0-440a-bd5b-50491dd69ab2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15ca9a3e-9a62-4267-8903-e6fe54a372b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00006139ae82")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "d9b3ef16-b27e-40b3-9d69-af73e852d053")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:M2_Hole_TH"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00006139a59f")
+		(at 204.723 134.762)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "H8"
+			(at 0 -3.2 0)
+			(layer "F.Fab")
+			(uuid "c3bc248a-535b-41dd-bb05-9aeefcd57c6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(uuid "2cd5240b-a3f8-41af-aa79-a4fc64e2142b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b8f01f7-c57f-4906-8f2b-93243948e761")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "840292ad-47e1-4133-9071-530ce8175baf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-0000613b097e")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 4.2 4.2)
+			(drill 2.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "2cf9cd47-4081-40d0-a4da-5355f64a052a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-0000615a3b24")
+		(at 191.89 137.821 -30)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW30"
+			(at 7 8.1 150)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5c503e10-a2fd-46a7-a0c6-d9fc43cd62d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 150)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76f59fd6-9604-41f2-a801-d3036e5cfafb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca8b1b6d-ae8c-4d6d-828d-1ddbbffb2d55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b6a8e63-544e-47a6-9d61-a438e228c730")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808883")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1a669a5e-468b-44c8-9f62-08819fa2f6b0")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4a833b9b-2830-44b5-9afe-7ef624f33d4c")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "309b98bc-721f-468a-b5a1-058fbc4741c6")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a9d1f388-e48c-4953-9f62-babe66442bad")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "20896b2a-d360-4e6e-8882-82c05870a273")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a3449148-97ad-482f-a7a2-694c6cdc8455")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "daa9278c-6d3b-4007-932a-36abd910dbd7")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d30bbf84-8137-4a39-ab60-ed7738c164ae")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "plates:SW_Hole"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-000061719f1f")
+		(at 200.96 122.11 -30)
+		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
+		(property "Reference" "SW31"
+			(at 7 8.1 150)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ca193a10-6540-4cf1-88b0-91dd3f96ce39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at -7.4 -8.1 150)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58b0f40f-1629-4233-9c03-13989c5ed136")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23a153d5-2c4a-4704-aded-6079b998f67e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 330)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ae6b2fb-7298-4b50-a40e-d45908680fb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000060808869")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -7 7)
+			(end 7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8080329a-4aa3-4259-8f5c-7db869ca7acf")
+		)
+		(fp_line
+			(start -7 -7)
+			(end -7 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9fd450c9-4a12-42e2-b702-1b6eba3a0ec8")
+		)
+		(fp_line
+			(start 7 7)
+			(end 7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b07b4dfc-a6f7-4fc2-9d1c-022d3f405681")
+		)
+		(fp_line
+			(start 7 -7)
+			(end -7 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c2f5402a-f628-4486-9cbd-cb875d41db1c")
+		)
+		(fp_line
+			(start -9 8.5)
+			(end 9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bfdbda5a-32f5-4fda-a508-53a8ca4d6e57")
+		)
+		(fp_line
+			(start -9 -8.5)
+			(end -9 8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cb84793f-9a38-4896-80e0-55cf74e336c1")
+		)
+		(fp_line
+			(start 9 8.5)
+			(end 9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "efa1f953-80c5-4935-b809-04f1bde8adc7")
+		)
+		(fp_line
+			(start 9 -8.5)
+			(end -9 -8.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "263d2d0c-281c-469b-bf8b-a5de45d3f5eb")
+		)
+		(embedded_fonts no)
+	)
+	(gr_arc
+		(start 77.92 47.451)
+		(mid 78.589554 45.834554)
+		(end 80.206 45.165)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7c56ad39-de94-427f-8ed1-5155b90d17f4")
+	)
+	(gr_line
+		(start 77.92 132.514)
+		(end 77.92 47.451)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e58f4f2e-2a38-4b45-928c-ce52d212bb70")
+	)
+	(gr_arc
+		(start 80.206 134.8)
+		(mid 78.589554 134.130446)
+		(end 77.92 132.514)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "72d13d53-5fa4-4bc7-b92b-0d059a2f80fd")
+	)
+	(gr_line
+		(start 80.206 134.8)
+		(end 169.04 134.8)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4611a59f-e8e7-4f6e-9b4f-b2b8b7c37fd0")
+	)
+	(gr_line
+		(start 115.546 45.165)
+		(end 80.206 45.165)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "dc757e95-5848-4926-9af5-f02cb93e6ccb")
+	)
+	(gr_line
+		(start 115.926 40.779)
+		(end 115.926 44.785)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4912a929-614c-4dc8-b553-81ed9ef0c318")
+	)
+	(gr_arc
+		(start 115.926 40.779)
+		(mid 116.037299 40.510299)
+		(end 116.306 40.399)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728d22")
+	)
+	(gr_arc
+		(start 115.926 44.785)
+		(mid 115.814701 45.053701)
+		(end 115.546 45.165)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728d26")
+	)
+	(gr_line
+		(start 134.542 40.399)
+		(end 116.306 40.399)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7eaf9384-8808-417a-8492-276a8818a5af")
+	)
+	(gr_arc
+		(start 134.922 38.398)
+		(mid 135.033299 38.129299)
+		(end 135.302 38.018)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728cdd")
+	)
+	(gr_arc
+		(start 134.922 40.019)
+		(mid 134.810701 40.287701)
+		(end 134.542 40.399)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728cf0")
+	)
+	(gr_line
+		(start 134.922 40.019)
+		(end 134.922 38.398)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728cef")
+	)
+	(gr_line
+		(start 153.185 38.017)
+		(end 135.302 38.018)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728cd4")
+	)
+	(gr_arc
+		(start 153.185 38.017)
+		(mid 153.453701 38.128299)
+		(end 153.565 38.397)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728c7c")
+	)
+	(gr_line
+		(start 153.565 40.02)
+		(end 153.565 38.397)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728c7b")
+	)
+	(gr_arc
+		(start 153.945 40.4)
+		(mid 153.676299 40.288701)
+		(end 153.565 40.02)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728c7a")
+	)
+	(gr_line
+		(start 169.04 134.8)
+		(end 210.699455 158.854935)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e7bb9a51-a243-4c3e-bdbc-80c1c9083d8c")
+	)
+	(gr_line
+		(start 172.18 40.4)
+		(end 153.945 40.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "23d1fb70-17e4-4182-86ad-8535f33ad5dc")
+	)
+	(gr_arc
+		(start 172.18 40.4)
+		(mid 172.448701 40.511299)
+		(end 172.56 40.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-000061728c46")
+	)
+	(gr_line
+		(start 172.56 43.379)
+		(end 172.56 40.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "cf507d77-02ca-4848-b89b-d6231c7db966")
+	)
+	(gr_arc
+		(start 172.94 43.759)
+		(mid 172.671299 43.647701)
+		(end 172.56 43.379)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "263932d3-c58d-4a74-9936-10f8ff7400de")
+	)
+	(gr_line
+		(start 189.284 43.76)
+		(end 172.94 43.759)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-00006109d3e6")
+	)
+	(gr_arc
+		(start 189.284 43.76)
+		(mid 190.900446 44.429554)
+		(end 191.57 46.046)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-00006133aaa6")
+	)
+	(gr_line
+		(start 191.571 105.951)
+		(end 191.57 46.046)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "73b879c1-8b1a-42df-9ce0-6eae7074b93d")
+	)
+	(gr_arc
+		(start 191.992438 106.686459)
+		(mid 191.681465 106.376178)
+		(end 191.571 105.951)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e42b2faf-8baa-4d5c-b3ac-3c70a57fbe47")
+	)
+	(gr_line
+		(start 191.992438 106.686459)
+		(end 228.796 127.992)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00000000-0000-0000-0000-0000617930b2")
+	)
+	(gr_arc
+		(start 212.755 158.597)
+		(mid 211.781762 159.16057)
+		(end 210.699455 158.854935)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "0a52081b-ea79-41d1-9dd6-a4bc5e31416a")
+	)
+	(gr_line
+		(start 212.755 158.597)
+		(end 229.177 130.151)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2dab78f8-128a-40ee-8000-7b0ba6853409")
+	)
+	(gr_arc
+		(start 228.796 127.992)
+		(mid 229.433644 128.992592)
+		(end 229.177 130.151)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "02c24e34-120d-4ec6-9665-7c5a5e8a3525")
+	)
+	(gr_text "Taira v1.0\nDesigned by strayer"
+		(at 116.152 132.279 0)
+		(layer "F.SilkS")
+		(uuid "00000000-0000-0000-0000-0000615a4b53")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Taira v1.0\nDesigned by strayer"
+		(at 116.152 132.279 0)
+		(layer "B.SilkS")
+		(uuid "00000000-0000-0000-0000-0000615a4b56")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.2)
+			)
+			(justify right mirror)
+		)
+	)
+	(embedded_fonts no)
 )

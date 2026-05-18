@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name tairakb)(type Legacy)(uri ${KIPRJMOD}/tairakb.lib)(options "")(descr ""))
+	(version 7)
+	(lib (name "tairakb") (type "Legacy") (uri "${KIPRJMOD}/tairakb.lib") (options "") (descr ""))
+	(lib (name "tairakb-cache") (type "Legacy") (uri "/Users/revan/repo/taira-keyboard/pcb/tairakb-cache.lib") (options "") (descr "Legacy project cache library"))
 )

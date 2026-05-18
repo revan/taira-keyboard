@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "taira-bottom-plate-cache") (type "Legacy") (uri "/Users/revan/repo/taira-keyboard/plates/bottom/taira-bottom-plate-cache.lib") (options "") (descr "Legacy project cache library"))
+)
