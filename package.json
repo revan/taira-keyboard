@@ -11,5 +11,24 @@
   "devDependencies": {
     "markdownlint-cli": "^0.31.1",
     "prettier": "^2.5.1"
-  }
+  },
+  "name": "taira-keyboard",
+  "version": "1.0.0",
+  "description": "A wireless low-profile split mechanical keyboard with 66 keys inspired by the ErgoDash and Corne Chocolate. It runs ZMK on two nice!nanos, is fully wireless via Bluetooth and uses Kailh Choc V1 switches in a 18x19mm grid layout.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strayer/taira-keyboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/strayer/taira-keyboard/issues"
+  },
+  "homepage": "https://github.com/strayer/taira-keyboard#readme"
 }
