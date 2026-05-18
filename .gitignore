@@ -33,6 +33,7 @@ fp-info-cache
 
 # Drill files
 *.drl
+!pcb/gerber/*.drl
 
 # macOS trash files
 .DS_Store

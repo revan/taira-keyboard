@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "build": "npm run build:pcb && npm run build:top-plate && npm run build:bottom-plate",
+    "build:pcb": "kicad-cli pcb export gerbers --output pcb/gerber/ --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts --no-x2 --subtract-soldermask pcb/tairakb.kicad_pcb && kicad-cli pcb export drill --output pcb/gerber/ --drill-origin absolute --excellon-units mm --excellon-zeros-format decimal pcb/tairakb.kicad_pcb && kicad-cli sch export pdf --output pcb/tairakb.pdf pcb/tairakb.kicad_sch",
+    "build:top-plate": "kicad-cli pcb export gerbers --output plates/top/gerber/ --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts --no-x2 --subtract-soldermask plates/top/taira-top-plate.kicad_pcb && kicad-cli sch export pdf --output plates/top/taira-top-plate.pdf plates/top/taira-top-plate.kicad_sch",
+    "build:bottom-plate": "kicad-cli pcb export gerbers --output plates/bottom/gerber/ --layers F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts --no-x2 --subtract-soldermask plates/bottom/taira-bottom-plate.kicad_pcb && kicad-cli sch export pdf --output plates/bottom/taira-bottom-plate.pdf plates/bottom/taira-bottom-plate.kicad_sch"
+  },
   "devDependencies": {
     "markdownlint-cli": "^0.31.1",
     "prettier": "^2.5.1"
