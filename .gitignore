@@ -41,6 +41,9 @@ fp-info-cache
 # gerber zip files
 **/gerber/*.zip
 
+# ERC / DRC reports
+*.rpt
+
 node_modules
 **/.history
 CLAUDE.md
