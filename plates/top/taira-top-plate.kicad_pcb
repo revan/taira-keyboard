@@ -4075,278 +4075,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "plates:SW_Hole"
-		(layer "F.Cu")
-		(uuid "00000000-0000-0000-0000-0000610a4051")
-		(at 217.53 131.672 -30)
-		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-		(property "Reference" "SW32"
-			(at 7 8.1 150)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "926743be-ccbb-4ffb-9746-4a377c8c8b11")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at -7.4 -8.1 150)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e34e61ac-5590-41d1-a2bd-9225d54e7049")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 330)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cba53b01-e9c4-4618-9f73-1003f97c633f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 330)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d67f8fd5-0cad-4573-a9a2-36b028c47c89")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(path "/00000000-0000-0000-0000-000060808877")
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -7 7)
-			(end 7 7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "41688514-0686-4003-b562-5e6dba39b19d")
-		)
-		(fp_line
-			(start -7 -7)
-			(end -7 7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "9b6ce71b-6b6f-41bd-b999-d84910a9d20c")
-		)
-		(fp_line
-			(start 7 7)
-			(end 7 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "b9c166ac-d2f8-41ee-993a-fe02bb65d2fa")
-		)
-		(fp_line
-			(start 7 -7)
-			(end -7 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "07dda99f-6d1e-4e41-9b8a-798b6e3f705a")
-		)
-		(fp_line
-			(start -9 8.5)
-			(end 9 8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "ba347254-f0ad-4ca2-b1ee-fa310dd23cba")
-		)
-		(fp_line
-			(start -9 -8.5)
-			(end -9 8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "ab43c42d-94fb-4630-a13f-6460db1e28be")
-		)
-		(fp_line
-			(start 9 8.5)
-			(end 9 -8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "69f2677d-a189-4e11-94a2-16c7999b770f")
-		)
-		(fp_line
-			(start 9 -8.5)
-			(end -9 -8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "513fb123-2617-4dba-b1cf-7509717b8361")
-		)
-		(embedded_fonts no)
-	)
-	(footprint "plates:SW_Hole"
-		(layer "F.Cu")
-		(uuid "00000000-0000-0000-0000-0000610a40c5")
-		(at 208.46 147.39 -30)
-		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
-		(property "Reference" "SW33"
-			(at 7 8.1 150)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "88806f0d-acfa-4700-8336-f48b917ecf38")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at -7.4 -8.1 150)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "08f651fc-a9e9-49b7-9f5f-9561ae5ccf14")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 330)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9d70018-741b-4cd6-af0e-825bfa6f3c7b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 330)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89522f90-9b0c-4fb4-b4c6-227f8647f353")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(path "/00000000-0000-0000-0000-000060808885")
-		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -7 7)
-			(end 7 7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "2bb90618-e8b6-419f-8701-09fc8025f91f")
-		)
-		(fp_line
-			(start -7 -7)
-			(end -7 7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "4d8c933e-ec9e-40e2-88cb-dcc4f1bc4b96")
-		)
-		(fp_line
-			(start 7 7)
-			(end 7 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "2d7ea186-1a6c-4fb8-8b95-78f6ccad31f9")
-		)
-		(fp_line
-			(start 7 -7)
-			(end -7 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "cf99c78d-c118-40f5-b889-cc9c2b7f98a0")
-		)
-		(fp_line
-			(start -9 8.5)
-			(end 9 8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "cc5844b4-5a66-46b8-a89b-35b097ccb41f")
-		)
-		(fp_line
-			(start -9 -8.5)
-			(end -9 8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b35316a1-d662-4016-bfd9-f2e4159bdc3f")
-		)
-		(fp_line
-			(start 9 8.5)
-			(end 9 -8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "33fa890b-9bb8-4c0c-9e65-2902d1f092fb")
-		)
-		(fp_line
-			(start 9 -8.5)
-			(end -9 -8.5)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "f1291513-dc93-4ee2-ab15-ff96b0970b76")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "plates:M2_Hole_TH"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-00006139a567")
@@ -5285,7 +5013,7 @@
 	)
 	(gr_line
 		(start 169.04 134.8)
-		(end 210.699455 158.854935)
+		(end 199.872 152.6)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -5379,7 +5107,7 @@
 	)
 	(gr_line
 		(start 191.992438 106.686459)
-		(end 228.796 127.992)
+		(end 213.71 119.228)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -5387,37 +5115,25 @@
 		(layer "Edge.Cuts")
 		(uuid "00000000-0000-0000-0000-0000617930b2")
 	)
-	(gr_arc
-		(start 212.755 158.597)
-		(mid 211.781762 159.16057)
-		(end 210.699455 158.854935)
+	(gr_line
+		(start 213.71 119.228)
+		(end 213.71 128.681)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "Edge.Cuts")
-		(uuid "0a52081b-ea79-41d1-9dd6-a4bc5e31416a")
+		(uuid "00000000-0000-0000-0000-000000000001")
 	)
 	(gr_line
-		(start 212.755 158.597)
-		(end 229.177 130.151)
+		(start 199.872 152.6)
+		(end 213.71 128.681)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "Edge.Cuts")
 		(uuid "2dab78f8-128a-40ee-8000-7b0ba6853409")
-	)
-	(gr_arc
-		(start 228.796 127.992)
-		(mid 229.433644 128.992592)
-		(end 229.177 130.151)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "02c24e34-120d-4ec6-9665-7c5a5e8a3525")
 	)
 	(gr_text "Taira v1.0\nDesigned by strayer"
 		(at 116.152 132.279 0)
