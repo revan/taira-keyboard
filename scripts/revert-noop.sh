@@ -35,6 +35,20 @@ revert_pdf_if_schematic_unchanged() {
     fi
 }
 
+revert_pdf_if_pcb_unchanged() {
+    local file=$1 dir base pcb
+    dir=$(dirname "$file")
+    base=$(basename "$file" .pdf)
+    base=${base%-assembly-front}
+    base=${base%-assembly-back}
+    pcb="$dir/$base.kicad_pcb"
+    git cat-file -e "HEAD:$file" 2>/dev/null || return 0
+    if [ -f "$pcb" ] && git diff --quiet HEAD -- "$pcb"; then
+        git checkout HEAD -- "$file"
+        echo "reverted (pcb unchanged): $file"
+    fi
+}
+
 while IFS= read -r file; do
     [ -z "$file" ] && continue
     case "$file" in
@@ -43,6 +57,9 @@ while IFS= read -r file; do
             ;;
         *.drl)
             revert_if_only_timestamps "$file" "$drill_pattern"
+            ;;
+        *-assembly-front.pdf|*-assembly-back.pdf)
+            revert_pdf_if_pcb_unchanged "$file"
             ;;
         *.pdf)
             revert_pdf_if_schematic_unchanged "$file"
