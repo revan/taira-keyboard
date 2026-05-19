@@ -47,3 +47,4 @@ fp-info-cache
 node_modules
 **/.history
 CLAUDE.md
+.idea/
