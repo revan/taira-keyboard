@@ -8631,7 +8631,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tairakb:Choc_Hotswap"
+		(property "Footprint" "tairakb:Choc_Hotswap_1.5U"
 			(at 250.19 76.2 0)
 			(hide yes)
 			(show_name no)

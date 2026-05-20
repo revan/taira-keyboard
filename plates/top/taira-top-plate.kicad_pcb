@@ -4574,7 +4574,7 @@
 	(footprint "plates:SW_Hole"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-0000615a3b24")
-		(at 191.89 137.821 -30)
+		(at 194.515 133.274 -30)
 		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
 		(property "Reference" "SW30"
 			(at 7 8.1 150)
@@ -4710,7 +4710,7 @@
 	(footprint "plates:SW_Hole"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000061719f1f")
-		(at 200.96 122.11 -30)
+		(at 201.295 106.594 180)
 		(descr "Licensed under the MIT License - Copyright (c) 2019 foostan - Based on https://github.com/foostan/crkbd/tree/main/plates/pcb")
 		(property "Reference" "SW31"
 			(at 7 8.1 150)
@@ -5085,7 +5085,7 @@
 		(uuid "00000000-0000-0000-0000-00006133aaa6")
 	)
 	(gr_line
-		(start 191.571 105.951)
+		(start 191.571 89.491)
 		(end 191.57 46.046)
 		(stroke
 			(width 0.15)
@@ -5095,9 +5095,9 @@
 		(uuid "73b879c1-8b1a-42df-9ce0-6eae7074b93d")
 	)
 	(gr_arc
-		(start 191.992438 106.686459)
-		(mid 191.681465 106.376178)
-		(end 191.571 105.951)
+		(start 191.992438 90.226459)
+		(mid 191.681465 89.916178)
+		(end 191.571 89.491)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -5106,8 +5106,8 @@
 		(uuid "e42b2faf-8baa-4d5c-b3ac-3c70a57fbe47")
 	)
 	(gr_line
-		(start 191.992438 106.686459)
-		(end 213.71 119.228)
+		(start 191.992438 90.226459)
+		(end 213.71 102.768)
 		(stroke
 			(width 0.15)
 			(type solid)
@@ -5116,7 +5116,7 @@
 		(uuid "00000000-0000-0000-0000-0000617930b2")
 	)
 	(gr_line
-		(start 213.71 119.228)
+		(start 213.71 102.768)
 		(end 213.71 128.681)
 		(stroke
 			(width 0.15)
